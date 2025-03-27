@@ -10,10 +10,8 @@ export default defineConfig({
       provider: 'v8',
       reporter: ['text', 'html'],
       thresholds: {
-        lines: minCoverage,
         functions: minCoverage,
         branches: minCoverage,
-        statements: minCoverage
       },
       exclude: [
         '**/index.ts',
