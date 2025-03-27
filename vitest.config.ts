@@ -13,12 +13,12 @@ export default defineConfig({
         functions: minCoverage,
         branches: minCoverage,
       },
-      include: ['src/**/*.test.ts'],
       exclude: [
-        '**/index.ts',
         '**/*.d.ts',
         '**/__mocks__/**',
         '**/__stubs__/**',
+        './vitest.config.ts',
+        './dist'
       ]
     }
   }
