@@ -1,1 +1,1 @@
-yarn test --coverage --watchAll=false
+yarn test --coverage --watch=false
