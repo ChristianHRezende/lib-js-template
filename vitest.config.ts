@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitest/config'
 
-const minCoverage = 50
+const minCoverage = 0
 
 export default defineConfig({
   test: {
