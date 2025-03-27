@@ -1,0 +1,24 @@
+{
+  "name": "shared-library",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./dist/**"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.27.0",
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "typescript": "^5.8.2"
+  },
+  "scripts": {
+    "build": "babel src -d dist",
+    "publish": "npm run build && npm publish"
+  },
+  "files": [
+    "dist/**/*"
+  ]
+}
