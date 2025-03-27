@@ -6,7 +6,6 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'node',
-    include: ['src/**/*.test.ts'],
     coverage: {
       provider: 'v8',
       reporter: ['text', 'html'],
@@ -14,6 +13,7 @@ export default defineConfig({
         functions: minCoverage,
         branches: minCoverage,
       },
+      include: ['src/**/*.test.ts'],
       exclude: [
         '**/index.ts',
         '**/*.d.ts',
