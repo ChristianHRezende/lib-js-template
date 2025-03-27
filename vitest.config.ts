@@ -17,7 +17,8 @@ export default defineConfig({
       exclude: [
         '**/index.ts',
         '**/*.d.ts',
-        '**/__mocks__/**'
+        '**/__mocks__/**',
+        '**/__stubs__/**',
       ]
     }
   }
