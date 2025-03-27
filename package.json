@@ -8,15 +8,36 @@
   "exports": {
     ".": "./dist/**"
   },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
   "devDependencies": {
     "@babel/cli": "^7.27.0",
     "@babel/core": "^7.26.10",
     "@babel/preset-env": "^7.26.9",
-    "typescript": "^5.8.2"
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@vitest/coverage-v8": "^3.0.9",
+    "@vitest/ui": "3.0.9",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^9.1.7",
+    "standard-version": "^9.5.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9"
   },
   "scripts": {
     "build": "babel src -d dist",
-    "publish": "npm run build && npm publish"
+    "commit": "git-cz",
+    "coverage": "vitest run --coverage",
+    "debug": "vitest --ui",
+    "publish": "npm run build && npm publish",
+    "prepare": "husky",
+    "postinstall": "husky install",
+    "release": "standard-version",
+    "test": "vitest"
   },
   "files": [
     "dist/**/*"
