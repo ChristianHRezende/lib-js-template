@@ -17,12 +17,15 @@
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^9.1.7",
     "standard-version": "^9.5.0",
+    "typedoc": "^0.28.1",
+    "typedoc-plugin-markdown": "^4.6.0",
     "typescript": "^5.8.2",
     "vitest": "^3.0.9"
   },
   "scripts": {
     "build": "babel src -d dist",
     "coverage": "vitest run --coverage",
+    "docs": "typedoc",
     "debug": "vitest --ui",
     "publish": "npm run build && npm publish",
     "prepare": "husky",

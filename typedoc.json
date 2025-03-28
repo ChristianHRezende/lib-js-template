@@ -1,0 +1,10 @@
+{
+    "entryPoints": ["./src/**/*.ts"],
+    "out": "docs/lib",
+    "exclude": ["**/__tests__/**", "**/infrastructure/**","./src/**/*.test.ts"],
+    "theme": "default",
+    "includeVersion": true,
+    "excludeExternals": true,
+    "excludePrivate": true,
+    "hideGenerator": true
+  }
