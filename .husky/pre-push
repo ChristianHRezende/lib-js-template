@@ -1,3 +1,3 @@
-. "$(dirname "$0")/_/"
+. "$(dirname "$0")/h"
 yarn lint
 yarn test --coverage --watch=false
